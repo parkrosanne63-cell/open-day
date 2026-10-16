@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Checkout – SmallBiblio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a href="javascript:history.back()"
+          ><img src="assets/back.png" alt="Back" /></a
+        ><a class="logo" href="index.html">SmallBiblio</a
+        ><button data-menu aria-label="Menu">
+          <img src="assets/menu.png" alt="" />
+        </button>
+        <nav class="menu">
+          <a href="index.html">HOME</a
+          ><a href="reservations.html">MY RESERVATIONS</a
+          ><a href="login.html">LOG IN</a><a href="catalog.html">BOOK CATALOG</a
+          ><a href="register.html">REGISTER</a>
+        </nav>
+      </header>
+    </div>
+    <main class="wrap">
+      <h1 style="font-size: clamp(34px, 4.4vw, 64px); margin-top: 20px">
+        Complete your reservation
+      </h1>
+      <p class="sub">Just a few details before your next read.</p>
+      <div
+        class="detail"
+        style="
+          justify-content: center;
+          align-items: flex-start;
+          margin-bottom: 70px;
+        "
+      >
+        <div class="card">
+          <div class="cv"><img src="assets/animal-farm.jpg" alt="" /></div>
+          <p style="font-size: 32px; color: var(--maroon)">
+            ANIMAL FARM By George Orwell
+          </p>
+        </div>
+        <div style="flex: 1; min-width: 300px; max-width: 640px">
+          <h2 style="text-align: left; margin-bottom: 20px">
+            Reservation Summary
+          </h2>
+          <div
+            class="sum"
+            style="margin: 0; color: var(--maroon); font-weight: 600"
+          >
+            <div>
+              Start date
+              <span style="width: auto; float: right; margin-left: 30px"
+                >15 Oct 2026</span
+              ><br />End date
+              <span style="width: auto; float: right; margin-left: 30px"
+                >19 Oct 2026</span
+              ><br />Duration
+              <span style="width: auto; float: right; margin-left: 30px"
+                >5 days</span
+              ><br />Estimated total
+              <span style="width: auto; float: right; margin-left: 30px"
+                >500 DA</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 style="margin-bottom: 10px">Contact Information</h2>
+      <form
+        class="panel"
+        onsubmit="
+          event.preventDefault();
+          document.getElementById('ok').classList.add('open');
+        "
+      >
+        <div class="field">
+          <label>FULL NAME</label
+          ><input placeholder="Enter your full name" required />
+        </div>
+        <div class="field">
+          <label>EMAIL</label
+          ><input type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="field">
+          <label>PHONE NUMBER</label
+          ><input type="tel" placeholder="Enter your phone number" required />
+        </div>
+        <div class="field">
+          <label>CITY</label><input placeholder="Enter your city" required />
+        </div>
+        <div class="center">
+          <button class="btn" style="font-size: 32px">
+            Confirm Reservation
+          </button>
+        </div>
+      </form>
+    </main>
+    <div class="mask" id="ok">
+      <div class="modal">
+        <h3>YOUR RESERVATION HAS BEEN SUCCESSFULLY MADE!</h3>
+        <p>
+          <a href="reservations.html">Check My Reservations</a><br /><a
+            href="catalog.html"
+            >Go Back To Catalog</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

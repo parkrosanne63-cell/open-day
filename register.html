@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Register – SmallBiblio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a href="javascript:history.back()"
+          ><img src="assets/back.png" alt="Back" /></a
+        ><a class="logo" href="index.html">SmallBiblio</a
+        ><button data-menu aria-label="Menu">
+          <img src="assets/menu.png" alt="" />
+        </button>
+        <nav class="menu">
+          <a href="index.html">HOME</a
+          ><a href="reservations.html">MY RESERVATIONS</a
+          ><a href="login.html">LOG IN</a><a href="catalog.html">BOOK CATALOG</a
+          ><a href="register.html">REGISTER</a>
+        </nav>
+      </header>
+    </div>
+    <main class="wrap" style="position: relative">
+      <img
+        class="deco"
+        style="right: 0; top: 300px"
+        src="assets/stars.png"
+        alt=""
+      />
+      <h1 style="margin-top: 20px">Create your account</h1>
+      <p class="sub">Join Small Biblio and discover your next favorite read.</p>
+      <form class="panel" action="catalog.html">
+        <div class="field">
+          <label>EMAIL ADRESS</label
+          ><input type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="field">
+          <label>PASSWORD</label
+          ><input type="password" placeholder="Enter your password" required />
+        </div>
+        <div class="field">
+          <label>CONFIRM PASSWORD</label
+          ><input
+            type="password"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+        <div class="center">
+          <button class="btn" style="font-size: 36px; padding: 0.7em 1em">
+            REGISTER
+          </button>
+          <p class="alt">
+            <a href="login.html">you already have an account? Log in</a>
+          </p>
+        </div>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

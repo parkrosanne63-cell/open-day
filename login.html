@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Log in – SmallBiblio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a href="javascript:history.back()"
+          ><img src="assets/back.png" alt="Back" /></a
+        ><a class="logo" href="index.html">SmallBiblio</a
+        ><button data-menu aria-label="Menu">
+          <img src="assets/menu.png" alt="" />
+        </button>
+        <nav class="menu">
+          <a href="index.html">HOME</a
+          ><a href="reservations.html">MY RESERVATIONS</a
+          ><a href="login.html">LOG IN</a><a href="catalog.html">BOOK CATALOG</a
+          ><a href="register.html">REGISTER</a>
+        </nav>
+      </header>
+    </div>
+    <main class="wrap" style="position: relative">
+      <img
+        class="deco"
+        style="right: 0; top: 200px"
+        src="assets/stars.png"
+        alt=""
+      /><img
+        class="deco"
+        style="left: 0; bottom: 40px"
+        src="assets/flower.png"
+        alt=""
+      />
+      <h1 style="margin-top: 20px">Welcome back</h1>
+      <p class="sub">Your next chapter awaits</p>
+      <form class="panel" action="catalog.html">
+        <div class="field">
+          <label>EMAIL ADRESS</label
+          ><input type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="field">
+          <label>PASSWORD</label
+          ><input type="password" placeholder="Enter your password" required />
+        </div>
+        <div class="center">
+          <button class="btn" style="font-size: 36px; padding: 0.7em 1em">
+            LOG IN
+          </button>
+          <p class="alt">
+            <a href="register.html">you don’t have an account? Register</a>
+          </p>
+        </div>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

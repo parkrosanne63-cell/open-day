@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My reservations – SmallBiblio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap1">
+      <header class="top">
+        <a href="javascript:history.back()"
+          ><img src="assets/back.png" alt="Back" style="gap: 1000px" /></a
+        ><a class="logo" href="index.html" style="gap: 100px">SmallBiblio</a
+        ><button data-menu aria-label="Menu">
+          <img src="assets/menu.png" alt="" />
+        </button>
+        <nav class="menu">
+          <a href="index.html">HOME</a
+          ><a href="reservations.html" style="gap: 100px">MY RESERVATIONS</a
+          ><a href="login.html">LOG IN</a><a href="catalog.html">BOOK CATALOG</a
+          ><a href="register.html">REGISTER</a>
+        </nav>
+      </header>
+    </div>
+    <h2 style="margin: 20px 0">My Reservations</h2>
+    <main class="wrap2">
+      <div class="res">
+        <div class="cv card" style="width: 190px">
+          <img src="assets/animal-farm.jpg" alt="" />
+        </div>
+        <a href="resdetails.html">
+          <div>
+            <div class="t">ANIMAL FARM<br />By George Orwell</div>
+            <br />
+            <div class="rate"><img src="assets/star.png" alt="" />4.0</div>
+          </div>
+          <div style="margin-left: auto">
+            <h3>ID:xxxxxxxxxxx</h3>
+            <p>From: 15 Oct 2026<br />To: 19 Oct 2026<br />5 days</p>
+            <p>Price per day: 100 DA<br />Total: 500 DA</p>
+          </div>
+        </a>
+      </div>
+      <div class="res">
+        <div class="cv card" style="width: 190px">
+          <img src="assets/animal-farm.jpg" alt="" />
+        </div>
+        <a href="resdetails.html">
+          <div>
+            <div class="t">ANIMAL FARM<br />By George Orwell</div>
+            <br>
+            <div class="rate"><img src="assets/star.png" alt="" />4.0</div>
+          </div>
+          <div style="margin-left: auto">
+            <h3>ID:xxxxxxxxxxx</h3>
+            <p>From: 15 Oct 2026<br />To: 19 Oct 2026<br />5 days</p>
+            <p>Price per day: 100 DA<br />Total: 500 DA</p>
+          </div>
+        </a>
+      </div>
+      <div class="empty" hidden>
+        <h2>You currently have no reservations!</h2>
+        <p class="sub">Make one so you can access this page!</p>
+        <a class="btn ghost" href="catalog.html">Go To Catalog</a>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

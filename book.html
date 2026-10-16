@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Animal Farm – SmallBiblio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a href="javascript:history.back()"
+          ><img src="assets/back.png" alt="Back" /></a
+        ><a class="logo" href="index.html">SmallBiblio</a
+        ><button data-menu aria-label="Menu">
+          <img src="assets/menu.png" alt="" />
+        </button>
+        <nav class="menu">
+          <a href="index.html">HOME</a
+          ><a href="reservations.html">MY RESERVATIONS</a
+          ><a href="login.html">LOG IN</a><a href="catalog.html">BOOK CATALOG</a
+          ><a href="register.html">REGISTER</a>
+        </nav>
+      </header>
+    </div>
+    <main class="wrap">
+      <div class="detail">
+        <div class="cv">
+          <img src="assets/animal-farm.jpg" alt="Animal Farm" />
+        </div>
+        <div class="txt">
+          <div class="price">
+            100 DA Per Day
+            <div class="rate"><img src="assets/star.png" alt="" />4.0</div>
+          </div>
+          <h3 style="color: var(--rose);">ANIMAL FARM </h3><small style="color: var(--maroon);">By</small> <strong style="color: var(--rose);"> George Orwell</strong>
+          </h3>
+          <p style="max-width: 62%; margin-top: 60px; color: var(--maroon);">
+            Animal Farm is the most famous by far of all twentieth-century
+            political allegories. Its account of a group of barnyard animals who
+            revolt against their vicious human master, only to submit to a
+            tyranny erected by their own kind, can fairly be said to have become
+            a universal drama. Orwell is one of the very few modern satirists
+            comparable to Jonathan Swift in power, artistry, and moral
+            authority; in Animal Farm his spare prose and the logic of his dark
+            comedy brilliantly highlight his stark message. Taking as his
+            starting point the betrayed promise of the Russian Revolution,
+            Orwell lays out a vision that, in its bitter wisdom, gives us the
+            clearest understanding we possess of the possible consequences of
+            our social and political acts.
+          </p>
+        </div>
+      </div>
+      <p style="margin: 37px 0"><a class="btn" href="#dates">RESERVE NOW</a></p>
+      <div class="calendar-container">
+        <h1>CHECK AVAILABILITY</h1>
+
+        <div class="calendar-card">
+          <!-- Month Navigation Header -->
+          <div class="calendar-header">
+            <button class="nav-btn">&lt;</button>
+            <span>OCTOBER 2026</span>
+            <button class="nav-btn">&gt;</button>
+          </div>
+
+          <!-- Days of the Week -->
+          <div class="weekdays">
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+            <div>S</div>
+          </div>
+
+          <!-- Calendar Days Grid -->
+          <div class="days-grid">
+            <!-- Empty slots for previous month offset if needed, or starting on day -->
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+
+            <!-- Selected Date Range Highlights -->
+            <div class="day selected start-range">15</div>
+            <div class="day selected in-range">16</div>
+            <div class="day selected in-range">17</div>
+            <div class="day selected end-range">18</div>
+
+            <div class="day selected single-select">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day faded">26</div>
+            <div class="day faded">27</div>
+            <div class="day faded">28</div>
+            <div class="day faded">29</div>
+            <div class="day faded">30</div>
+            <div class="day faded">31</div>
+          </div>
+        </div>
+      </div>
+      <h2>Your reservation</h2>
+      <div class="sum">
+        <div>
+          <span>From</span
+          ><b id="s-from" style="font-weight: 400">15 Oct 2026</b><br /><span
+            >To</span
+          ><b id="s-to" style="font-weight: 400">19 Oct 2026</b><br /><span
+            >Duration</span
+          ><b id="s-n" style="font-weight: 400">5 days</b><br /><span
+            >Estimated total:</span
+          ><b id="s-total" style="font-weight: 400">500 DA</b>
+        </div>
+        <a class="btn rose" href="checkout.html" style="border-radius: 15px"
+          >RESERVE THIS BOOK</a
+        >
+      </div>
+    </main>
+    <div class="mask" id="bad">
+      <div class="modal">
+        <h3>INVALID DATE RANGE!</h3>
+        <p>It’s not possible to reserve a book for more than 30 days</p>
+        <button class="btn ghost" data-close>OK</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
